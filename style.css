@@ -1,0 +1,127 @@
+/* =========================
+   Tower Defense X
+   style.css
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#1f2937;
+    color:white;
+}
+
+header{
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    border-bottom:3px solid #22c55e;
+}
+
+header h1{
+    color:#22c55e;
+    margin-bottom:15px;
+}
+
+.topbar{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.info{
+    background:#374151;
+    padding:10px 18px;
+    border-radius:10px;
+    min-width:120px;
+    text-align:center;
+    font-weight:bold;
+}
+
+#container{
+    display:grid;
+    grid-template-columns:240px 1fr 240px;
+    gap:15px;
+    padding:15px;
+}
+
+#leftPanel,
+#rightPanel{
+    background:#111827;
+    padding:15px;
+    border-radius:15px;
+}
+
+#leftPanel h2,
+#rightPanel h2{
+    margin-bottom:15px;
+    color:#22c55e;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#1d4ed8;
+    transform:scale(1.03);
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#gameCanvas{
+    background:#7ec850;
+    border:5px solid white;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+#log{
+    margin-top:10px;
+    background:#1f2937;
+    border-radius:10px;
+    height:250px;
+    overflow:auto;
+    padding:10px;
+    font-size:14px;
+}
+
+hr{
+    margin:15px 0;
+    border:1px solid #374151;
+}
+
+@media(max-width:1000px){
+
+    #container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #gameCanvas{
+
+        width:100%;
+        height:auto;
+
+    }
+
+}
