@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense X</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🏰 Tower Defense X</h1>
+
+    <div class="topbar">
+
+        <div class="info">
+            ❤️ HP:
+            <span id="hp">20</span>
+        </div>
+
+        <div class="info">
+            💰 Gold:
+            <span id="gold">500</span>
+        </div>
+
+        <div class="info">
+            🌊 Wave:
+            <span id="wave">1</span>
+        </div>
+
+        <div class="info">
+            ⭐ Score:
+            <span id="score">0</span>
+        </div>
+
+    </div>
+
+</header>
+
+<div id="container">
+
+    <aside id="leftPanel">
+
+        <h2>🗼 Towers</h2>
+
+        <button id="tower1">
+            🏹 Archer (100)
+        </button>
+
+        <button id="tower2">
+            🔥 Fire (150)
+        </button>
+
+        <button id="tower3">
+            ❄ Ice (200)
+        </button>
+
+        <hr>
+
+        <button id="startBtn">
+            ▶ Start Game
+        </button>
+
+        <button id="restartBtn">
+            🔄 Restart
+        </button>
+
+    </aside>
+
+    <main>
+
+        <canvas
+            id="gameCanvas"
+            width="960"
+            height="540">
+        </canvas>
+
+    </main>
+
+    <aside id="rightPanel">
+
+        <h2>📋 Thông tin</h2>
+
+        <p>
+            Click lên bản đồ để đặt tháp.
+        </p>
+
+        <p>
+            Quái sẽ đi từ trái sang phải.
+        </p>
+
+        <p>
+            Đừng để quái đi hết đường!
+        </p>
+
+        <hr>
+
+        <h3>📜 Nhật ký</h3>
+
+        <div id="log">
+
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
